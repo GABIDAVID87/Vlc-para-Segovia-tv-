@@ -1,4 +1,4 @@
-Name: Build VLC Android TV
+name: Build VLC Android TV
 
 on:
   workflow_dispatch:

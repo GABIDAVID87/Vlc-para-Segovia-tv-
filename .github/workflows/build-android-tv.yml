@@ -1,4 +1,4 @@
-name: Build VLC Android TV
+Name: Build VLC Android TV
 
 on:
   workflow_dispatch:
@@ -22,6 +22,8 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: ''
 
       - name: Install Android SDK components
         run: |
@@ -44,3 +46,4 @@ jobs:
           name: VLC-Android-TV-debug
           path: application/app/build/outputs/apk/**/*.apk
           if-no-files-found: error
+          
